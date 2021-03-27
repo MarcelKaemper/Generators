@@ -1,0 +1,14 @@
+<div class="container">
+    <div [hidden]="submitted">
+        <h2>New DB Form</h2>
+        <form>
+            <label for="name">DB Name:</label>
+            <input type="text" id="name" [(ngModel)]="model.name" name="name">
+            <label for="user">User:</label>
+            <input type="text" id="user" [(ngModel)]="model.user" name="user">
+            <label for="host">Host:</label>
+            <input type="text" id="host" [(ngModel)]="model.host" name="host">
+            <button type="button" (click)="generate()">Generate</button>
+        </form>
+    </div>
+</div>
